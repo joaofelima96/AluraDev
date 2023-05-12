@@ -2,6 +2,7 @@
 @import url('https://unpkg.com/@phosphor-icons/web@2.0.3/src/fill/style.css');
 @import url('https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 :root {
     --principal--background: #051D3B;
@@ -26,6 +27,7 @@ body {
 main {
     display: flex;
     justify-content: space-between;
+    gap: 2.5rem;
 }
 
 a,
@@ -73,7 +75,7 @@ button[class="botao__salvar__projeto"] {
 }
 
 .cabecalho__perfil__nome {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -104,7 +106,7 @@ button[class="botao__salvar__projeto"] {
 }
 
 .texto__menu {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-size: 0.75rem;
     font-weight: 400;
     line-height: 1.13rem;
@@ -112,7 +114,7 @@ button[class="botao__salvar__projeto"] {
 }
 
 .texto__link {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-size: 1rem;
     font-weight: 400;
 }
@@ -150,7 +152,7 @@ button[class="botao__salvar__projeto"] {
     flex-direction: column;
     padding-top: 2.5rem;
     padding-right: 2rem;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
 }
 
@@ -203,9 +205,9 @@ button[class="botao__salvar__projeto"] {
 
 .icone__botao__linguagem {
     font-size: 1.2rem;
-    position: relative;
-    bottom: 3.3rem;
-    /* left: 15rem; */
+    position: absolute;
+    left: 15rem;
+    bottom: 14.7rem;
     z-index: 1;
     color: rgb(255, 255, 255, 0.64);
     pointer-events: none;
@@ -219,6 +221,10 @@ button[class="botao__salvar__projeto"] {
     background-color: #051D3B;
     margin-top: 1rem;
     margin-bottom: 2rem;
+}
+
+.texto__cor__realce {
+    padding-top: 1.5rem;
 }
 
 #botao__selecionar__cor {
@@ -252,4 +258,32 @@ button[class="botao__salvar__projeto"] {
     color: var(--principal--background);
     line-height: 24px;
     text-align: center;
+}
+
+.campo__editor__codigo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    gap: 2rem;
+}
+
+.fundo__area__editor {
+    width: 47rem;
+    height: 22.9rem;
+    background-color: var(--azul--piscina);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+}
+
+.area__editor {
+    width: 43rem;
+    height: 18.9rem;
+    background-color: black;
+    border-style: none;
+    border-radius: 0.5rem;
+    color: var(--branco);
+    padding: 3rem 1rem 1rem 1rem;
+    font-family: 'Roboto Mono', monospace;
 }
