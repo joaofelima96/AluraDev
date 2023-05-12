@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraDev</title>
+    <link rel="icon" href="Assets/iconeTitle.png">
+
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/duotone/style.css"
+    />
+
+    <link rel="stylesheet" href="ResetCSS.css">
+    <link rel="stylesheet" href="EditorStyle.css">
+
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho__logo" src="Assets/image.png" alt="Logo AluraDev">
+        <input class="cabecalho__pesquisar" type="text" id="search" name="q" placeholder="Busque por algo">
+        <div class="cabecalho__perfil">
+            <img class="cabecalho__perfil__foto" src="/Assets/perfil.png" alt="Foto de perfil">
+            <p class="cabecalho__perfil__nome">nome</p>
+        </div>
+    </header>
+    <main>
+        <nav class="menu__navegacao__esquerdo">
+            <p class="texto__menu">MENU</p>
+            <div class="divisorias__menu__esquerdo editor">
+                <a class="botao__link__esquerdo botao__editor">
+                    <i class="icones__menu__esquerdo ph ph-code"></i>
+                </a>
+                <p class="texto__link texto__editor">Editor de código</p>
+            </div>
+            <div class="divisorias__menu__esquerdo comunidade">
+                <a class="botao__link__esquerdo botao__comunidade">
+                    <i class="icones__menu__esquerdo ph-fill ph-users-three"></i>
+                </a>
+                <p class="texto__link texto__comunidade">Comunidade</p>
+            </div>
+        </nav>
+        <div class="campo__editor__codigo"></div>
+        <div class="menu__direito">
+            <p class="textos__menu__direito">Seu projeto</p>
+            <input class="input__nome__projeto" type="text" placeholder="Nome do seu projeto">
+            <input class="input__descricao__projeto" type="text" placeholder="Descrição do seu projeto">
+            <p class="textos__menu__direito">Personalização</p>
+            <select class="botao__selecionar__linguagem">
+                <option class="opcao opcao__escolha" disabled selected value="">Escolha uma linguagem</option>
+                <option class="opcao" value="opcao2">HTML</option>
+                <option class="opcao" value="opcao3">CSS</option>
+                <option class="opcao" value="opcao4">JavaScript</option>
+                <option class="opcao" value="opcao5">C#</option>
+                <option class="opcao" value="opcao6">Java</option>
+            </select>
+            <i class="icone__botao__linguagem ph ph-caret-circle-down"></i>
+            <p class="textos__menu__direito">Cor de realce</p>
+            <button class="borda__botao__selecionar__cor" disabled>
+                <input value="#6BD1FF" type="color" name="cor__da__borda" id="botao__selecionar__cor">
+            </button>
+            <button class="botao__salvar__projeto" type="submit">Salvar projeto</button>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
