@@ -13,6 +13,9 @@
     --branco: #FFFFFF;
     --cinza--azulado: #2D415B;
     --input-color: initial;
+    --verde--mac: #27C93F;
+    --amarelo--mac: #FFBD2E;
+    --vermelho--mac: #FF5F56;
 }
 
 ::placeholder {
@@ -31,8 +34,9 @@ main {
 }
 
 a,
-select:hover,
-button[class="botao__salvar__projeto"] {
+select,
+button[class="botao__salvar__projeto"],
+button[class="botao__highlight"] {
     cursor: pointer;
 }
 
@@ -72,6 +76,7 @@ button[class="botao__salvar__projeto"] {
     width: 45px;
     height: 45px;
     border-radius: 50%;
+    margin-left: 9rem;
 }
 
 .cabecalho__perfil__nome {
@@ -286,4 +291,34 @@ button[class="botao__salvar__projeto"] {
     color: var(--branco);
     padding: 3rem 1rem 1rem 1rem;
     font-family: 'Roboto Mono', monospace;
+}
+
+.botao__highlight {
+    width: 47rem;
+    height: 3.5rem;
+    background-color: rgb(80, 129, 251, 0.08);
+    border-style: none;
+    border-radius: 0.5rem;
+    color: rgb(255, 255, 255, 0.64);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.icones__imac {
+    position: absolute;
+    left: 2.8rem;
+    top: 3rem;
+}
+
+.circulo__vermelho {
+    color: var(--vermelho--mac);
+}
+
+.circulo__amarelo {
+    color: var(--amarelo--mac);
+}
+
+.circulo__verde {
+    color: var(--verde--mac);
 }
