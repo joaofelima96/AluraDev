@@ -283,8 +283,11 @@ button[class="botao__highlight"] {
 }
 
 .area__editor {
-    width: 43rem;
-    height: 18.9rem;
+    box-sizing: border-box;
+    max-width: 43rem;
+    min-width: 43rem;
+    max-height: 18.9rem;
+    min-height: 18.9rem;
     background-color: black;
     border-style: none;
     border-radius: 0.5rem;
@@ -309,6 +312,7 @@ button[class="botao__highlight"] {
     position: absolute;
     left: 2.8rem;
     top: 3rem;
+    padding-bottom: 1rem;
 }
 
 .circulo__vermelho {
