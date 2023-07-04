@@ -14,6 +14,7 @@
     />
 
     <link rel="stylesheet" href="ResetCSS.css">
+    <link rel="stylesheet" href="dracula.css">
     <link rel="stylesheet" href="EditorStyle.css">
 
 </head>
@@ -44,7 +45,8 @@
         </nav>
         <div class="campo__editor__codigo">
             <div class="fundo__area__editor">
-                <textarea class="area__editor"></textarea>
+                <!-- <textarea class="area__editor"></textarea> -->
+                <code class="area__editor hljs" contenteditable="true" aria-label="Editor de código"></code>
             </div>
             <section class="icones__imac">
                 <i class="ph-fill ph-circle circulo__vermelho"></i>
@@ -60,11 +62,9 @@
             <p class="textos__menu__direito">Personalização</p>
             <select class="botao__selecionar__linguagem">
                 <option class="opcao opcao__escolha" disabled selected value="">Escolha uma linguagem</option>
-                <option class="opcao" value="opcao2">HTML</option>
-                <option class="opcao" value="opcao3">CSS</option>
-                <option class="opcao" value="opcao4">JavaScript</option>
-                <option class="opcao" value="opcao5">C#</option>
-                <option class="opcao" value="opcao6">Java</option>
+                <option class="opcao" value="html">HTML</option>
+                <option class="opcao" value="css">CSS</option>
+                <option class="opcao" value="javascript">JavaScript</option>
             </select>
             <i class="icone__botao__linguagem ph ph-caret-circle-down"></i>
             <p class="textos__menu__direito texto__cor__realce">Cor de realce</p>
@@ -75,5 +75,7 @@
         </div>
     </main>
     <footer></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

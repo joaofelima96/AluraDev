@@ -212,7 +212,7 @@ button[class="botao__highlight"] {
     font-size: 1.2rem;
     position: absolute;
     left: 15rem;
-    bottom: 14.7rem;
+    bottom: 41.8rem;
     z-index: 1;
     color: rgb(255, 255, 255, 0.64);
     pointer-events: none;
@@ -274,27 +274,12 @@ button[class="botao__highlight"] {
 
 .fundo__area__editor {
     width: 47rem;
-    height: 22.9rem;
+    height: 55rem;
     background-color: var(--azul--piscina);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 0.5rem;
-}
-
-.area__editor {
-    box-sizing: border-box;
-    max-width: 43rem;
-    min-width: 43rem;
-    max-height: 18.9rem;
-    min-height: 18.9rem;
-    background-color: black;
-    border-style: none;
-    border-top: 3rem solid black;
-    border-radius: 0.5rem;
-    color: var(--branco);
-    padding: 0 1rem 1rem 1rem;
-    font-family: 'Roboto Mono', monospace;
 }
 
 .botao__highlight {
@@ -311,8 +296,8 @@ button[class="botao__highlight"] {
 
 .icones__imac {
     position: absolute;
-    left: 2.8rem;
-    top: 3rem;
+    left: 1.6rem;
+    top: 1.4rem;
     padding-bottom: 1rem;
 }
 
