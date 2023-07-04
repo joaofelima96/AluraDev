@@ -290,9 +290,10 @@ button[class="botao__highlight"] {
     min-height: 18.9rem;
     background-color: black;
     border-style: none;
+    border-top: 3rem solid black;
     border-radius: 0.5rem;
     color: var(--branco);
-    padding: 3rem 1rem 1rem 1rem;
+    padding: 0 1rem 1rem 1rem;
     font-family: 'Roboto Mono', monospace;
 }
 
